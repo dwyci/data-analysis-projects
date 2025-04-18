@@ -1,11 +1,21 @@
 # Define three variables for the LaunchCode shuttle - one for the starting fuel level, another for the number of astronauts aboard, and the third for the altitude the shuttle reaches.
 
 
+numberOfAstronauts = 6
+shuttleAltitude = 0
 
 
 
 # Exercise #1: Construct while loops to do the following:
   # a. Query the user for the starting fuel level. Validate that the user enters a positive, integer value greater than 5000 but less than 30000. 
+startingFuelLevel = 0
+
+
+while(startingFuelLevel < 5000 or startingFuelLevel > 30000):
+    startingFuelLevel =  int(input("What is your starting fuel level?"  ))
+    print("Please enter a fuel level between 5000 and 30000")
+
+print("You have the right amount of fuel for take off")
 
 
 
