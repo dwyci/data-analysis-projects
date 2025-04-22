@@ -1,3 +1,22 @@
+#practice
+# a_list = [4, 2, 8, 6, 5, 4]
+# a_list[2] = True
+# print(a_list)
+
+# b_list = ['barber', 'baby', 'bubbles', 'bumblebee']
+# b_list[3 : ] = ['B', 'b']
+# print(b_list)
+
+total_points = 0   #Loop by element
+scores = [10, 25, 8, 33, 0]
+# for score in scores:
+#     total_points += score 
+# print(total_points)
+
+for index in range(len(scores)):  # loop by index
+    total_points  += scores[index]
+print(total_points)
+
 # Create the adding_practice list with the following entry: 273.15
 
 # Use the append method to add the number 42 and the string "hello" to the list. Add these new items one at a time.  Print the list after each step to confirm the changes.
