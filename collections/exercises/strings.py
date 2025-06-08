@@ -21,12 +21,27 @@ print(text[12:24])
 
 # 1. Print 1 letter per line.
 
-for i in range(len(word) - 1 , -1,-1):
-    print(word[i])
+# for i in range(len(word) - 1 , -1,-1):
+#     print(word[i])
 
 
+# # 2. Refactor the code to use the accumulator pattern to build up and print the reversed string. For example, if given 'good', print 'doog' on one line.
 
-# 2. Refactor the code to use the accumulator pattern to build up and print the reversed string. For example, if given 'good', print 'doog' on one line.
+# rev = ""
+# for i in range(len(word) -1, -1, -1):
+#     rev = rev + word[i]
+
+# print(rev)
+
 
 
 # 3. Refactor the code to print a combination of the original and reversed string. For example, given 'tomato', print 'tomatootamot'. (If you want to be fancy, print 'tomato | otamot').
+forward = "" 
+rev = ""
+for i in range(len(word)-1,-1, -1):
+    rev = rev +word[i]
+
+for i in range(0, len(word), 1):
+    forward = forward +word[i]
+
+print(forward +  " | " + rev)
