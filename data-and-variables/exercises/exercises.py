@@ -25,3 +25,4 @@ hoursToMoon = milestoMoon/shuttleSpeed
 daysToMoon = hoursToMoon/24
 
 print(shuttleName + " will take " + str(daysToMoon) + " days to reach the Moon")
+
