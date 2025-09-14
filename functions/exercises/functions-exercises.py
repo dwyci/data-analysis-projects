@@ -1,4 +1,8 @@
 # Part 1 A -- Make a Line
+def make_line(size):
+    print('#' * size)
+
+make_line(5)
 
 
 
