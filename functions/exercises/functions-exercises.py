@@ -10,20 +10,24 @@ def make_line(size):
 
 # Part 1 B -- Make a Square
 # create a function using your make_line function to code a square
-def make_square(size):
-    square = ""
-    for i in range(size):
-        square += "\n" + make_line(size) 
-    return square
+# def make_square(size):
+#     square = ""
+#     for i in range(size):
+#         square += "\n" + make_line(size) 
+#     return square
 
-print(make_square(9))
+# print(make_square(9))
     
 
-
-
-
-
 # Part 1 C -- Make a Rectangle
+def make_rectangle(width, height):
+    rectangle =""
+    for i in range(height):
+        rectangle += "\n" + make_line(width)
+
+    return rectangle
+
+print(make_rectangle(5,3)) 
 
 
 
