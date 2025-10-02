@@ -27,18 +27,18 @@ def make_rectangle(width, height):
 
     return rectangle
 
-print(make_rectangle(5,3)) 
-
-
-
-
+print(make_rectangle(9,2)) 
 
 # Part 2 A -- Make a Stairs
+def make_downward_stairs(height):
+    stairs =""
+    for i in range(height):
+        i = i+1
+        stairs += "\n"+ make_line(i)
+       
+    return stairs
 
-
-
-
-
+print(make_downward_stairs(1))
 # Part 2 B -- Make Space-Line 
 
 
