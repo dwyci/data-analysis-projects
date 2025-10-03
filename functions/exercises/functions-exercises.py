@@ -41,7 +41,18 @@ def make_downward_stairs(height):
 print(make_downward_stairs(1))
 # Part 2 B -- Make Space-Line 
 
+def make_space_line(numSpaces, numChars):
+    space_line= ""
+    for i in range(numSpaces):
+        space_line += "_"
+    for i in range(numChars):
+        space_line +="#"
+    for i in range(numSpaces):
+        space_line += "_"
+    return space_line
 
+
+print(make_space_line(3, 5))
 
 
 
